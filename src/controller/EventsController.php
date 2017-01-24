@@ -15,6 +15,24 @@ class EventsController extends Controller {
 
   }
 
+  public function detail() {
+    if( !isset( $_GET["id"]) ){
+    			$_SESSION["error"] = ['Dit evenement bestaat niet'];
+    			$this->redirect('index.php');
+    		}
+
+    		$id = $_GET["id"];
+    		$event = $this->EventDAO->selectById($id);
+
+    		if( !$event ){
+    			$_SESSION["error"] = ['Dit evenement bestaat niet'];
+    			$this->redirect('index.php');
+    		}
+
+    		$this->set('event', $event);
+
+  }
+
   public function agenda() {
 
     //$items = $this->EventDAO->selectAll();
