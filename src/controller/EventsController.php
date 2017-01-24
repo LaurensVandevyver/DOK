@@ -12,7 +12,9 @@ class EventsController extends Controller {
   }
 
   public function index() {
-
+    $conditions = array();
+    $events = $this->eventDAO->selectAll();
+    $this->set('events', $events);
   }
 
   public function detail() {

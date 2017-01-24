@@ -61,36 +61,22 @@
   <h1 class="titles alberto space">Binnenkort</h1>
 
   <section class="binnenkort">
-    <!-- Hier moet ik er 3 van echo'en via PHP but let's do things quick and dirty for now -->
-    <article class="agenda-item-main">
-      <div class="title-wrapper">
-        <div class="date alberto space">01/05</div>
-        <h2 class="alberto space">Blanco - Elizabeth van dam 'in love'</h2>
-      </div>
-      <div class="agenda-item-image"></div>
-      <p class="agenda-item-description">"BLANCO  is de noemer waaronder de Gentse atelierorganisatie NUCLEO haar platformfunctie uitbouwt.</p>
-      <a class="infobutton alberto" href="#">Meer Info</a>
-    </article>
 
-    <article class="agenda-item-main">
-      <div class="title-wrapper">
-        <div class="date alberto space">01/05</div>
-        <h2 class="alberto space">Blanco - Elizabeth van dam 'in love'</h2>
-      </div>
-      <div class="agenda-item-image"></div>
-      <p class="agenda-item-description">"BLANCO  is de noemer waaronder de Gentse atelierorganisatie NUCLEO haar platformfunctie uitbouwt.</p>
-      <a class="infobutton alberto" href="#">Meer Info</a>
-    </article>
-
-    <article class="agenda-item-main">
-      <div class="title-wrapper">
-        <div class="date alberto space">01/05</div>
-        <h2 class="alberto space">Blanco - Elizabeth van dam 'in love'</h2>
-      </div>
-      <div class="agenda-item-image"></div>
-      <p class="agenda-item-description">"BLANCO  is de noemer waaronder de Gentse atelierorganisatie NUCLEO haar platformfunctie uitbouwt.</p>
-      <a class="infobutton alberto" href="#">Meer Info</a>
-    </article>
+    <?php foreach($events as $event): ?>
+      <article class="agenda-item-main">
+        <div class="title-wrapper alberto">
+          <?php echo $event['start']; ?>
+          <?php echo $event['title'];?>
+        </div>
+        <img class="agenda-item-image" src="assets/img/<?php echo $event['picture_filename']; ?>" alt="">
+        <p class="agenda-item-description">
+          <?php echo $event['shortdescription'];?>
+        </p>
+        <div class="agenda-button alberto">
+        <?php echo "<a href='index.php?page=detail&amp;id=".$event['id']."'>Meer info</a>" ?>
+        </div>
+      </article>
+    <? endforeach;?>
 
   </section>
 

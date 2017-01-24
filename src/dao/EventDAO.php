@@ -2,9 +2,13 @@
 require_once __DIR__ . '/DAO.php';
 class EventDAO extends DAO {
 
+  public function selectFirstThree() {
+
+  }
+
   public function selectAll() {
-    $sql = "SELECT * FROM `SELECT * FROM `ma3_dok_events`
-ORDER BY `ma3_dok_events`.`start`  ASC`";
+    $sql = "SELECT * FROM `ma3_dok_events`
+ORDER BY `ma3_dok_events`.`start`  ASC limit 3";
 		$stmt = $this->pdo->prepare($sql);
 		$stmt->execute();
 		return $stmt->fetchAll(PDO::FETCH_ASSOC);
