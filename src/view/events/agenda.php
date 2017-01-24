@@ -28,17 +28,20 @@
 
     <main>
       <h1 class="agendatitle alberto">Agenda</h1>
-      <section class="binnenkort">
+      <section class="groteagenda">
         <?php foreach($events as $event): ?>
           <article class="agenda-item-main">
             <div class="title-wrapper alberto">
               <?php echo $event['start']; ?>
               <?php echo $event['title'];?>
             </div>
-            <img src="assets/img/<?php echo $event['picture_filename']; ?>" width="300" alt="">
+            <img class="agenda-item-image" src="assets/img/<?php echo $event['picture_filename']; ?>" alt="">
             <p class="agenda-item-description">
               <?php echo $event['shortdescription'];?>
             </p>
+            <div class="agenda-button alberto">
+            <?php echo "<a href='index.php?page=detail&amp;id=".$event['id']."'>Meer info</a>" ?>
+            </div>
           </article>
         <? endforeach;?>
       </section>
