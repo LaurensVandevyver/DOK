@@ -15,7 +15,31 @@ class EventsController extends Controller {
     $conditions = array();
     $events = $this->eventDAO->selectAll();
     $this->set('events', $events);
+
+    if( !empty( $_POST ) ){
+
+      $this->handleRegistration();
+
+    }
   }
+
+  private function handleRegistration(){
+		$data = [
+      'email' => $_POST['email']
+    ];
+
+if( $this->eventDAO->insert( $data ) ){
+
+	$_SESSION['info'] = "Uw email adres werd correct opgeslaan";
+	$this->redirect('index.php');
+
+}else {
+
+	$_SESSION['error'] = $this->EventDAO->validateRegistrationData($data);
+	$this->redirect('index.php?page=detail'); // DIT NOG AANPASSEN !!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+}
+	}
 
   public function detail() {
     if( !isset( $_GET["id"]) ){

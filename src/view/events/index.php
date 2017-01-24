@@ -100,12 +100,14 @@
   <section class="doknieuws">
     <div>
     <p class="newstext">Hou je van dok? Wil je het laatste nieuws in je inbox? Schrijf je in voor onze nieuwsbrief! We sturen je enkel het belangrijkste, zo houden we je mailbox proper voor andere zaken! </p>
-    <form class="nieuwsbrief" action="index.html" method="post">
+    <form class="nieuwsbrief" action="index.php" method="post">
       <div class="inputwrapper">
         <label class="inputlabel alberto" for="email">Email:</label>
-        <input class="input" type="email" name="email" placeholder="info@dokgent.be">
+        <p class="error"></p>
+        <input class="input" type="email" name="email" placeholder="info@dokgent.be" required>
       </div>
-      <button class="verstuurbutton alberto" type="button" name="button">Versturen</button>
+      <input type="submit" class="verstuurbutton alberto" value="Versturen">
+      <!--<button class="verstuurbutton alberto" type="button" name="button">Versturen</button>-->
     </form>
   </div>
   <div>

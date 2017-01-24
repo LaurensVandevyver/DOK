@@ -2,9 +2,31 @@
 require_once __DIR__ . '/DAO.php';
 class EventDAO extends DAO {
 
-  public function selectFirstThree() {
+  public function insert($data) {
+    $errors = $this->validateCreateData( $data );
+
+    if( !empty( $errors ) ) {
+      return false;
+    }
+
+    $sql = "INSERT INTO `ma3_dok_nieuwsbrief`(`email`) VALUES (:email)";
+
+    $stmt = $this->pdo->prepare($sql);
+    $stmt->bindValue(':email', $data["email"]);
+    return $stmt->execute();
 
   }
+
+  public function validateCreateData( $data ){
+
+  $errors = [];
+
+  if( !isset($data["email"]) || empty( $data["email"]) ){
+    $errors[] = "Vul een email adres in.";
+  }
+
+  return $errors;
+}
 
   public function selectAll() {
     $sql = "SELECT * FROM `ma3_dok_events`
