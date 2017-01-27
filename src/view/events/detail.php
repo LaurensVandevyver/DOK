@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-
     <header>
       <nav class="mainnav">
         <ul class="navlist">
@@ -27,10 +19,12 @@
     </header>
 
     <main>
-      <section>
-        <h1><?php echo $event['title'];?></h1>
+      <section class="detail">
+        <div class="detail-title-wrapper">
+          <p class="detail-date space alberto"><?php echo $event['date']; ?></p>
+          <h1 class="detail-title space alberto"><?php echo $event['title'];?></h1>
+        </div>
+        <img class="detail-item-image" src="assets/img/<?php echo $event['picture_filename']; ?>" alt="">
+        <p class="detail-description"><?php echo $event['description']; ?></p>
       </section>
     </main>
-
-  </body>
-</html>

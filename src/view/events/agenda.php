@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>DOK</title>
-  </head>
-  <body>
-
     <header>
       <nav class="mainnav">
         <ul class="navlist">
@@ -46,13 +38,6 @@
         <? endforeach;?>
       </section>
     </main>
-
-
-  </body>
-</html>
-
-
-
 
 <!--<section>
   <h1>Events</h1>

@@ -28,12 +28,12 @@ class EventsController extends Controller {
       'email' => $_POST['email']
     ];
 
-if( $this->eventDAO->insert( $data ) ){
+    if( $this->eventDAO->insert( $data ) ){
 
-	$_SESSION['info'] = "Uw email adres werd correct opgeslaan";
-	$this->redirect('index.php');
+	      $_SESSION['info'] = "Uw email adres werd correct opgeslaan";
+	      $this->redirect('index.php');
 
-}else {
+      }else {
 
 	$_SESSION['error'] = $this->EventDAO->validateRegistrationData($data);
 	$this->redirect('index.php?page=detail'); // DIT NOG AANPASSEN !!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -48,8 +48,7 @@ if( $this->eventDAO->insert( $data ) ){
     		}
 
     		$id = $_GET["id"];
-    		$event = $this->EventDAO->selectById($id);
-
+    		$event = $this->eventDAO->selectById($id);
     		if( !$event ){
     			$_SESSION["error"] = ['Dit evenement bestaat niet'];
     			$this->redirect('index.php');
@@ -59,19 +58,29 @@ if( $this->eventDAO->insert( $data ) ){
 
   }
 
-  public function agenda() {
+  //public function search() {
+    //if( !isset( $_GET["query"]) ){
+      //$this->redirect("index.php");
+    //}
 
-    //$items = $this->EventDAO->selectAll();
-		//$this->set('items', $items);
+    // $events = $this->eventDAO->search( $_GET["query"] );
+
+    // $this->set('events', $events);
+
+  //}
+
+  public function agenda() {
 
     $conditions = array();
 
+    //$events = $this->eventDAO->search($_GET["query"]);
+
     //example: search on title
-    // $conditions[0] = array(
-    //   'field' => 'title',
-    //   'comparator' => 'like',
-    //   'value' => 'schoen'
-    // );
+    //$conditions[0] = array(
+       //'field' => 'title',
+       //'comparator' => 'like',
+       //'value' => $_GET["query"]
+     //);
 
     //example: search on location_id
     // $conditions[0] = array(

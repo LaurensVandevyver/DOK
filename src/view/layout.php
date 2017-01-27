@@ -4,8 +4,6 @@
     <meta charset="utf-8">
     <title>DOK</title>
     <?php echo $css;?>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
