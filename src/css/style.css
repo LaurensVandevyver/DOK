@@ -440,6 +440,7 @@ p {
 
 .doknieuws {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   padding-bottom: 5rem;
   width: 96rem;
@@ -516,7 +517,6 @@ footer {
 .arrow {
   width: 4.4rem;
   height: 3.9rem;
-  border: 1px solid red;
   z-index: 99999999;
 }
 
@@ -549,7 +549,6 @@ footer {
 .agenda {
   width: 96rem;
   display: flex;
-  border: 1px solid red;
 }
 
 .agendatitle {
@@ -590,6 +589,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 100vh;
 }
 
 .detail-title-wrapper {
@@ -603,7 +603,16 @@ footer {
 .detail-title {
   font-size: 4rem;
   z-index: 99;
-  background-image: url(../assets/svg/streep.svg);
+
+  &::after {
+    content: '';
+    width: 90%;
+    height: 3rem;
+    background-color: var(--yellow);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 
   /* &::after {
     content: '';
@@ -626,11 +635,37 @@ footer {
 }
 
 .detail-item-image {
-  width: 100%;
+  width: 40rem;
+  height: 40rem;
+  background-size: 100%;
+  z-index: 1;
+
+  &::after {
+    content: '';
+    background-color: var(--blue);
+    width: 40rem;
+    height: 40rem;
+    top: 1rem;
+    left: 1rem;
+    position: absolute;
+    z-index: 0;
+  }
+}
+
+.imagewrapper {
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+}
+
+.contentwrapper {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
 }
 
 .detail-description {
-  width: 90%;
+  width: 40%;
   margin-top: 3rem;
   font-size: 1.8rem;
   line-height: 150%;
@@ -700,12 +735,9 @@ input:checked + h2 + .reveal {
   left: 0;
   overflow: hidden;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.menu-wrapper {
-  border: 1px solid red;
 }
 
 .mobile-navlistitem {
@@ -732,6 +764,13 @@ input:checked + h2 + .reveal {
   &:hover {
     opacity: 1;
   }
+}
+
+.mobile-search-bar {
+  width: 90vw;
+  display: flex;
+  margin: 3rem;
+  justify-content: space-around;
 }
 
 .search-wrapper {
@@ -782,6 +821,16 @@ input:checked + h2 + .reveal {
   display: flex;
 }
 
+.emailinput {
+  width: 25rem;
+}
+
+.whitelogo {
+  background-image: url(../assets/img/whitelogo.png);
+  width: 32rem;
+  height: 11.9rem;
+}
+
 @media (width <= 960px) {
 
   main {
@@ -797,16 +846,20 @@ input:checked + h2 + .reveal {
   }
 
   .opdok {
-    width: 70rem;
+    width: 64rem;
   }
-
-}
-
-@media (width <= 715px) {
 
   .mainnav {
     display: none;
   }
+
+  .mobile-nav {
+    display: block;
+  }
+
+}
+
+@media (width <= 750px) {
 
   .headerimg {
     background-image: url(../assets/img/tabletheader.png);
@@ -840,10 +893,6 @@ input:checked + h2 + .reveal {
     margin: 1rem;
   }
 
-  .opdok {
-    width: 45rem;
-  }
-
   .sfeerimage {
     display: none;
   }
@@ -858,10 +907,6 @@ input:checked + h2 + .reveal {
     width: 90vw;
     padding: 1vw;
   }
-
-  .mobile-nav {
-    display: block;
-  }
 }
 
 @media (width <= 640px) {
@@ -874,26 +919,42 @@ input:checked + h2 + .reveal {
     width: 32rem;
   }
 
-  @media (width <= 530px) {
+  footer {
+    width: 100vw;
+  }
 
-    .headerimg {
-      background-image: url(../assets/img/mobileheader.png);
-      width: 32rem;
-      height: 70.4rem;
+}
 
-      &::before {
-        background-image: none;
-      }
+@media (width <= 620px) {
 
-      &::after {
-        width: 20rem;
-        height: 49.8rem;
-      }
+  .opdok {
+    width: 30rem;
+  }
+}
+
+@media (width <= 550px) {
+
+  .headerimg {
+    background-image: url(../assets/img/mobileheader.png);
+    width: 32rem;
+    height: 70.4rem;
+
+    &::before {
+      background-image: none;
     }
 
-    .datum {
-      display: none;
+    &::after {
+      width: 20rem;
+      height: 49.8rem;
     }
+  }
+
+  .datum {
+    display: none;
+  }
+
+  .doknieuws {
+    width: 100vw;
   }
 
   @media (width <= 450px) {
@@ -916,6 +977,11 @@ input:checked + h2 + .reveal {
     .inputwrapper {
       display: flex;
       flex-direction: column;
+    }
+
+    .error {
+      width: 100%;
+      border: 1px solid green;
     }
 
     .input {
@@ -948,7 +1014,6 @@ input:checked + h2 + .reveal {
     .arrow {
       width: 4.4rem;
       height: 3.9rem;
-      border: 1px solid red;
       z-index: 9999999;
     }
 

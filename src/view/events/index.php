@@ -64,7 +64,7 @@
 
   </section>
 
-  <div class="programmabutton alberto space">Volledig programma</div>
+  <a  class="programmabutton alberto space" href="index.php?page=agenda">Volledig Programma</a>
 
   <h1 class="titles alberto space">op dok</h1>
 
@@ -129,27 +129,27 @@
       </div>
       <div class="blue block box test">
         <h2 class="block-title alberto">Box</h2>
-        <p class="block-description">DOKbox (onder DOKmarkt) is een intieme black box met tribune, podium en bankjes geschikt voor allerlei activiteiten zoals theatershows en akoestische performances. </p>
+        <p class="block-description alberto">DOKbox (onder DOKmarkt) is een intieme black box met tribune, podium en bankjes geschikt voor allerlei activiteiten zoals theatershows en akoestische performances. </p>
         <a class="block-link alberto" href="#"><div class="bluelink">Meer info</div></a>
       </div>
       <div class="yellow block markt">
         <h2 class="block-title alberto">Markt</h2>
-        <p class="block-description">DOKmarkt is de overdekte zone en uitloper van de loods. Een zone voor sport en spel, met doelen voor minivoetbal, een basketbalring. Maar ook de plek van de DOK(rommel)markt.</p>
+        <p class="block-description alberto">DOKmarkt is de overdekte zone en uitloper van de loods. Een zone voor sport en spel, met doelen voor minivoetbal, een basketbalring. Maar ook de plek van de DOK(rommel)markt.</p>
         <a class="block-link alberto" href="#"><div class="yellowlink">Meer info</div></a>
       </div>
       <div class="red block strand">
         <h2 class="block-title alberto">Strand en terras</h2>
-        <p class="block-description">Naast ons park kan je ons strand en terras vinden, kom zonnebaden midden in Gent aan het koele water of geniet van een drankje op ons terras!</p>
+        <p class="block-description alberto">Naast ons park kan je ons strand en terras vinden, kom zonnebaden midden in Gent aan het koele water of geniet van een drankje op ons terras!</p>
         <a class="block-link alberto" href="#"><div class="redlink">Meer info</div></a>
       </div>
       <div class="blue block arena">
         <h2 class="block-title alberto">Arena</h2>
-        <p class="block-description">Amfitheater naar Grieks model opgebouwd uit aarde en gras. Om naar mooie en intieme voorstellingen te kijken onder een stralende zon of een blinkende sterrenhemel.</p>
+        <p class="block-description alberto">Amfitheater naar Grieks model opgebouwd uit aarde en gras. Om naar mooie en intieme voorstellingen te kijken onder een stralende zon of een blinkende sterrenhemel.</p>
         <a class="block-link alberto" href="#"><div class="bluelink">Meer info</div></a>
       </div>
       <div class="yellow block park">
         <h2 class="block-title alberto">Park</h2>
-        <p class="block-description">DOKpark verbindt het strand, de moestuin en de arena met elkaar. Zoals ieder jaar zal DOKpark er ook dit seizoen er weer anders uitzien. Het strand en de groene zone worden wat groter. </p>
+        <p class="block-description alberto">DOKpark verbindt het strand, de moestuin en de arena met elkaar. Zoals ieder jaar zal DOKpark er ook dit seizoen er weer anders uitzien. Het strand en de groene zone worden wat groter. </p>
         <a class="block-link alberto" href="#"><div class="yellowlink">Meer info</div></a>
       </div>
 
@@ -162,12 +162,11 @@
     <p class="newstext">Hou je van dok? Wil je het laatste nieuws in je inbox? Schrijf je in voor onze nieuwsbrief! We sturen je enkel het belangrijkste, zo houden we je mailbox proper voor andere zaken! </p>
     <form class="nieuwsbrief" action="index.php" method="post">
       <div class="inputwrapper">
-        <label class="inputlabel alberto" for="email">Email:</label>
         <p class="error"></p>
-        <input class="input" type="email" name="email" placeholder="info@dokgent.be" required>
+        <label class="inputlabel alberto" for="email">Email:</label>
+        <input class="emailinput" type="email" name="email" placeholder="info@dokgent.be" required>
       </div>
       <input type="submit" class="verstuurbutton alberto" value="Versturen">
-      <!--<button class="verstuurbutton alberto" type="button" name="button">Versturen</button>-->
     </form>
   </div>
   <div>

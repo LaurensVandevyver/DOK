@@ -8,8 +8,13 @@
           <p class="detail-date space alberto"><?php echo $event['date']; ?></p>
           <h1 class="detail-title space alberto"><?php echo $event['title'];?></h1>
         </div>
-        <img class="detail-item-image" src="assets/img/<?php echo $event['picture_filename']; ?>" alt="">
+        <div class="contentwrapper">
+          <div class="imagewrapper">
+          <img class="detail-item-image" src="assets/img/<?php echo $event['picture_filename']; ?>" alt="">
+          <dt>tags</dt><dd><ul><?php foreach($event['tags'] as $tag): ?><li><?php echo $tag['tag'];?></li><?php endforeach;?></ul></dd>
+          </div>
         <p class="detail-description"><?php echo $event['description']; ?></p>
+      </div>
       </section>
     </main>
 
