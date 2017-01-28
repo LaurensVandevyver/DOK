@@ -831,6 +831,10 @@ input:checked + h2 + .reveal {
   height: 11.9rem;
 }
 
+.error {
+  color: var(--red);
+}
+
 @media (width <= 960px) {
 
   main {
@@ -981,7 +985,6 @@ input:checked + h2 + .reveal {
 
     .error {
       width: 100%;
-      border: 1px solid green;
     }
 
     .input {
