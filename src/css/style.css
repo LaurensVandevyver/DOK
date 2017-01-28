@@ -125,12 +125,16 @@ header {
 
   &::after {
     content: '';
-    width: 56rem;
-    height: 55rem;
+    /* width: 56rem;
+    height: 55rem; */
     position: absolute;
     z-index: -2;
-    margin-left: 10rem;
-    margin-top: 10rem;
+    /* margin-left: 10rem;
+    margin-top: 10rem; */
+    width: 100vw;
+    height: 40rem;
+    left: 0;
+    top: 30rem;
     background-color: var(--yellow);
   }
 }
@@ -476,9 +480,9 @@ p {
   &::before {
     content: '';
     background-image: url(../assets/img/collage.png);
+    position: absolute;
     width: 34.1rem;
     height: 31.8rem;
-    position: absolute;
     margin-left: -2rem;
     margin-top: -1.9rem;
   }
@@ -576,7 +580,7 @@ footer {
 }
 
 .groteagenda {
-  width: 96rem;
+  max-width: 96rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
