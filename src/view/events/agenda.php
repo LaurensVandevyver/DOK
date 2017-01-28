@@ -1,34 +1,17 @@
     <header>
-      <nav class="mainnav">
-        <ul class="navlist">
-          <li class="navlistitem alberto"><a href="#"><div class="navlogo"></div></a></li>
-          <li class="navlistitem alberto"><a href="#">Agenda</a></li>
-          <li class="navlistitem alberto"><a href="#">Info</a></li>
-          <li class="navlistitem alberto dokhover"><a href="#">DOK</a>
-            <ul class="dok-items">
-              <li class="alberto dok-item">Gebruiken</li>
-              <li class="alberto dok-item">Bewoners</li>
-              <li class="alberto dok-item">Keuken</li>
-              <li class="alberto dok-item">Sport</li>
-              <li class="alberto dok-item">Tank</li>
-            </ul>
-          </li>
-          <li class="navlistitem alberto"><a href="#">Zones</a></li>
-        </ul>
-      </nav>
+      <?php include 'nav.php';?>
     </header>
 
     <main>
       <h1 class="agendatitle alberto">Agenda</h1>
       <section class="groteagenda">
         <?php foreach($events as $event): ?>
-          <article class="agenda-item-main">
+          <article class="agenda-item-main <?php echo $event['id']; ?>">
             <div class="title-wrapper alberto">
-              <?php echo $event['start']; ?>
               <?php echo $event['title'];?>
             </div>
-            <img class="agenda-item-image" src="assets/img/<?php echo $event['picture_filename']; ?>" alt="">
-            <p class="agenda-item-description">
+            <img class="agenda-item-image" src="assets/img/<?php echo $event['picture_filename']; ?>" alt=""><div class="picture-date alberto"><?php echo $event['date']; ?></div></img>
+            <p class="agenda-item-description space">
               <?php echo $event['shortdescription'];?>
             </p>
             <div class="agenda-button alberto">
@@ -38,6 +21,8 @@
         <? endforeach;?>
       </section>
     </main>
+
+    <?php include 'footer.php';?>
 
 <!--<section>
   <h1>Events</h1>

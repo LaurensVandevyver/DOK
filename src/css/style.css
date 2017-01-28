@@ -5,7 +5,7 @@
   --yellow: #dd991a;
   --blue: #093268;
   --red: #6b1c17;
-  --size: 20rem;
+  --size: 29rem;
 }
 
 body {
@@ -181,6 +181,9 @@ main {
 
 .agenda-item-main {
   width: 30rem;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .title-wrapper {
@@ -225,6 +228,7 @@ p {
   background-image: url(../assets/img/blanco.png);
   width: 30rem;
   overflow: hidden;
+  z-index: -9999;
 }
 
 .agenda-item-description {
@@ -328,6 +332,10 @@ p {
   &:hover .block-title {
     opacity: 0;
   }
+
+  &:hover .block-link {
+    opacity: 1;
+  }
 }
 
 .kantine {
@@ -344,16 +352,50 @@ p {
 }
 
 .block-description {
-  width: 20rem;
-  padding: .5rem;
+  width: var(--size);
+  padding: 1rem;
   position: absolute;
   opacity: 0;
-  font-family: helvetica;
-  font-size: 1.6rem;
+  font-size: 2rem;
+  line-height: 125%;
   top: 0;
   left: 0;
   transition: .7s;
-  text-align: left;
+  text-align: center;
+  align-self: center;
+}
+
+.block-link {
+  background-color: white;
+  padding: .5rem;
+  text-decoration: none;
+  transition: 1s;
+  opacity: 0;
+  position: absolute;
+}
+
+.redlink {
+  color: var(--red);
+
+  &a {
+    color: var(--red);
+  }
+}
+
+.bluelink {
+  color: var(--blue);
+
+  &a {
+    color: var(--blue);
+  }
+}
+
+.yellowlink {
+  color: var(--yellow);
+
+  &a {
+    color: var(--yellow);
+  }
 }
 
 .box {
@@ -518,10 +560,20 @@ footer {
   padding: .5rem;
   background-color: var(--blue);
   align-self: center;
+
+  & a {
+    color: white;
+  }
 }
 
-.agenda-button a {
-  color: white;
+.agenda-button2 {
+  padding: .5rem;
+  align-self: flex-end;
+  font-size: 4rem;
+
+  & a {
+    color: var(--blue);
+  }
 }
 
 .groteagenda {
@@ -705,6 +757,29 @@ input:checked + h2 + .reveal {
 .main-date {
   font-size: 5rem;
   margin: 1rem;
+}
+
+.picture-date {
+  /* position: absolute; */
+  margin-top: -5rem;
+  margin-left: 1rem;
+  font-size: 4rem;
+  z-index: 10000000000;
+
+  &::after {
+    content: '';
+    background-image: url(../assets/img/datumbackground.png);
+    width: 9.3rem;
+    height: 6.2rem;
+    margin-left: -8rem;
+    margin-top: -1rem;
+    z-index: 0;
+    position: absolute;
+  }
+}
+
+.agendapagina-item-image {
+  display: flex;
 }
 
 @media (width <= 960px) {
