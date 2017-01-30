@@ -73,14 +73,18 @@ class EventsController extends Controller {
 
     $conditions = array();
 
-    //$events = $this->eventDAO->search($_GET["query"]);
+    //$conditions = $this->eventDAO->search($_GET["query"]);
 
     //example: search on title
-    //$conditions[0] = array(
-       //'field' => 'title',
-       //'comparator' => 'like',
-       //'value' => $_GET["query"]
-     //);
+    if(isset( $_GET["query"])) {
+    $conditions[0] = array(
+       'field' => 'title',
+       'comparator' => 'like',
+       'value' => $_GET["query"]
+     );
+   } else {
+     // redirect naar 404 pagina
+   }
 
     //example: search on location_id
     // $conditions[0] = array(

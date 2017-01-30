@@ -62,6 +62,8 @@ ORDER BY `ma3_dok_events`.`start`  ASC limit 3";
       //special columns?
       if($columnName == 'location_id') {
         $columnName = 'ma3_dok_locations.id';
+      } else if($columnName == 'id') {
+        $columnName = 'ma3_dok_events.id';
       } else if($columnName == 'location') {
         $columnName = 'ma3_dok_locations.name';
       } else if($columnName == 'organiser') {
@@ -111,11 +113,17 @@ ORDER BY `ma3_dok_events`.`start`  ASC limit 3";
   }
 
   public function selectById($id) {
-    $sql = "SELECT * FROM `ma3_dok_events` WHERE `id` = :id";
-    $stmt = $this->pdo->prepare($sql);
-    $stmt->bindValue(':id', $id);
-    $stmt->execute();
-    return $stmt->fetch(PDO::FETCH_ASSOC);
+    $conditions = array();
+    $conditions[] = array(
+       'field' => 'id',
+       'comparator' => '=',
+       'value' => $id
+     );
+    $events = $this->search($conditions);
+    if(empty($events)) {
+      return false;
+    }
+    return $events[0];
   }
 
   private function _getEventIdsFromResult(&$result) {

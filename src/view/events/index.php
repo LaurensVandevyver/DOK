@@ -37,7 +37,7 @@
   <div class="logo"></div>
   <div class="datum alberto">1 mei tot 25 sept</div>
   <div class="headerimg"><h1 class="hidden">DOK</h1><p class="headerdatum alberto">1 mei tot 25 sept</p></div>
-  <p class="description alberto">Vanaf 1 mei tot 25 september opent DOK weer iedere zondag zijn deuren! De kantine, speeltuin, park inclusief strand de DOKbox en zo veel meer staan al weer op je te wachten! Tot dan! </p>
+  <p class="description alberto">Vanaf 1 mei tot 25 september opent DOK weer iedere zondag zijn deuren! <br/> De kantine, speeltuin, park inclusief strand, de DOKbox en zo veel meer staan al weer op je te wachten! <br/> Tot dan! </p>
 </header>
 
 <main>
