@@ -903,6 +903,46 @@ br {
   margin-top: 1rem;
 }
 
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.error-wrapper {
+  width: 60rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.errorimage {
+  background-image: url(../assets/img/404.png);
+  width: 50.3rem;
+  height: 15.4rem;
+}
+
+.errortitle {
+  font-size: 6rem;
+}
+
+.errormessage {
+  line-height: 150%;
+}
+
+.terugbutton {
+  background-color: var(--yellow);
+  padding: 1rem;
+  color: var(--black);
+  font-size: 4rem;
+
+  &a:hover {
+    background-color: transparent;
+  }
+}
+
 @media (width <= 960px) {
 
   main {

@@ -1,6 +1,6 @@
-    <header>
-      <?php include 'nav.php';?>
-    </header>
+<header>
+  <?php include 'nav.php';?>
+</header>
 
     <main>
       <h1 class="agendatitle alberto">Agenda</h1>
@@ -22,7 +22,7 @@
       </section>
     </main>
 
-    <?php include 'footer.php';?>
+      <?php include 'footer.php';?>
 
 <!--<section>
   <h1>Events</h1>

@@ -18,6 +18,10 @@ $routes = array(
   'detail' => array(
     'controller' => 'Events',
     'action' => 'detail'
+  ),
+  'oeps' => array(
+    'controller' => 'Events',
+    'action' => 'oeps'
   )
 );
 

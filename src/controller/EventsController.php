@@ -58,6 +58,10 @@ class EventsController extends Controller {
 
   }
 
+  public function oeps() {
+
+  }
+
   //public function search() {
     //if( !isset( $_GET["query"]) ){
       //$this->redirect("index.php");
