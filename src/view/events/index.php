@@ -44,7 +44,7 @@
 
   <h1 class="titles alberto space">Binnenkort</h1>
 
-  <section class="binnenkort">
+  <section class="binnenkort space">
 
     <?php foreach($events as $event): ?>
       <article class="agenda-item-main">
@@ -52,10 +52,12 @@
           <div class="main-date"><?php echo $event['date']; ?></div>
           <?php echo $event['title'];?>
         </div>
-        <img class="agenda-item-image" src="assets/img/<?php echo $event['picture_filename']; ?>" alt="">
-        <p class="agenda-item-description">
-          <?php echo $event['shortdescription'];?>
-        </p>
+        <div class="card">
+          <img class="agenda-item-image" src="assets/img/<?php echo $event['picture_filename']; ?>" alt="">
+          <p class="agenda-item-description">
+            <?php echo $event['shortdescription'];?>
+          </p>
+        </div>
         <div class="agenda-button2 alberto">
         <?php echo "<a href='index.php?page=detail&amp;id=".$event['id']."'>Meer info</a>" ?>
         </div>

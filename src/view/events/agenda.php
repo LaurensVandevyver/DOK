@@ -8,13 +8,13 @@
         <?php foreach($events as $event): ?>
           <article class="agenda-item-main <?php echo $event['id']; ?>">
             <div class="title-wrapper alberto">
-              <?php echo $event['title'];?>
+            <h2 class="agenda-title"><?php echo $event['title'];?></h2>
             </div>
+            <div class="card">
             <img class="agenda-item-image" src="assets/img/<?php echo $event['picture_filename']; ?>" alt=""><div class="picture-date alberto"><?php echo $event['date']; ?></div></img>
-            <p class="agenda-item-description space">
-              <?php echo $event['shortdescription'];?>
-            </p>
-            <div class="agenda-button alberto">
+            <p class="agenda-item-description space"><?php echo $event['shortdescription'];?></p>
+            </div>
+            <div class="agenda-button2 alberto">
             <?php echo "<a href='index.php?page=detail&amp;id=".$event['id']."'>Meer info</a>" ?>
             </div>
           </article>
