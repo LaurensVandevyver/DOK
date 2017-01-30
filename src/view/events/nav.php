@@ -5,9 +5,9 @@
 <div class="menu">
 <div class="whitelogo space"></div>
 <div class="mobile-search-bar">
-  <input type="text" id="search" name="query" placeholder="Search..." value=""><br/>
+  <input type="text" height="30" id="search" name="query" placeholder="Search..." value=""><br/>
   <input type="hidden" name="page" value="agenda">
-  <input type="submit" name="action" value="Zoek">
+  <input type="submit" name="action" value="Zoek" class="zoekbutton alberto">
 </div>
   <ul class="menu-wrapper alberto">
     <li class="mobile-navlistitem alberto"><a href="#">Home</a></li>
@@ -67,9 +67,9 @@
       <form class="search-wrapper" action="index.php?page=agenda" method="get">
         <div class="search-icon"></div>
           <div class="search-bar">
-            <input type="text" id="search" name="query" placeholder="Search..."><br/>
+            <input type="text" id="search" class="zoekbalk" name="query" placeholder="Search..."><br/>
             <input type="hidden" name="page" value="agenda">
-            <input type="submit" name="action" value="Zoek">
+            <input type="submit" name="action" value="Zoek" class="zoekbutton alberto">
           </div>
       </form>
     </li>

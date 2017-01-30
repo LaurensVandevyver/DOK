@@ -23,6 +23,7 @@ header {
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  z-index: 999999999999999999999;
 }
 
 .mainnav {
@@ -148,8 +149,10 @@ header {
 }
 
 .description {
-  width: 80rem;
+  width: 96rem;
   margin-top: -10rem;
+  color: var(--blue);
+  line-height: 150%;
 }
 
 .datum {
@@ -764,6 +767,7 @@ input:checked + h2 + .reveal {
   background: #1d1f20;
   height: 6rem;
   line-height: 6rem;
+  z-index: 999999999999999999;
 }
 
 .hamburger {
@@ -943,6 +947,21 @@ br {
   }
 }
 
+.zoekbalk {
+  height: 2rem;
+  margin-top: 1rem;
+}
+
+.zoekbutton {
+  background-color: transparent;
+  border: none;
+  color: white;
+  text-decoration: underline;
+  padding: .5rem;
+  margin: 0 1rem 1rem;
+  font-size: 2.5rem;
+}
+
 @media (width <= 960px) {
 
   main {
@@ -975,7 +994,7 @@ br {
 
   .mobile-nav {
     display: block;
-    z-index: 999999999;
+    z-index: 9999999999999999999;
   }
 
   .description {
