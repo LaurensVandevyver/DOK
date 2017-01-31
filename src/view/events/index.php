@@ -137,9 +137,11 @@
     <p class="newstext">Hou je van dok? Wil je het laatste nieuws in je inbox? Schrijf je in voor onze nieuwsbrief! We sturen je enkel het belangrijkste, zo houden we je mailbox proper voor andere zaken! </p>
     <form class="nieuwsbrief" action="index.php" method="post">
       <div class="inputwrapper">
+        <div class="inputthing">
+        <p class="inputlabel alberto">Email:</p>
         <p class="error"></p>
-        <label class="inputlabel alberto" for="email">Email:</label>
         <input class="emailinput" type="email" name="email" placeholder="info@dokgent.be" required>
+      </div>
       </div>
       <input type="submit" class="verstuurbutton alberto" value="Versturen">
     </form>

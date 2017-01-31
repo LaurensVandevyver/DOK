@@ -14,7 +14,7 @@
   <ul class="menu-wrapper alberto">
     <li class="mobile-navlistitem alberto"><a href="index.php">Home</a></li>
     <li class="mobile-navlistitem alberto"><a href="?page=agenda">Agenda</a></li>
-    <li class="mobile-navlistitem alberto"><a href="#">Info</a></li>
+    <li class="mobile-navlistitem alberto"><a href="http://dokgent.be/dok-info/">Info</a></li>
 
     <li class="mobile-navlistitem alberto"><div class="dok">DOK</div>
       <ul class="dok-items">
@@ -46,7 +46,7 @@
     <li class="navlistitem alberto"><a href="index.php"><div class="navlogo"></div></a></li>
     <li class="navlistitem alberto"><a href="?page=agenda">Agenda</a></li>
     <li class="navlistitem alberto"><a href="#">Info</a></li>
-    <li class="navlistitem alberto dokhover"><a href="#">DOK</a>
+    <li class="navlistitem alberto dokhover"><a href="http://dokgent.be/dok-info/">DOK</a>
       <ul class="dok-items">
         <li class="alberto dok-item"><a href="http://dokgent.be/gebruiken/">Wat</a></li>
         <li class="alberto dok-item"><a href="http://dokgent.be/bewoners/">Bewoners</a></li>

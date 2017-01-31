@@ -502,6 +502,13 @@ p {
   margin-top: 1rem;
 }
 
+.inputthing {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
 .nieuwsbrief {
   margin-left: 1rem;
   display: flex;
@@ -532,6 +539,7 @@ p {
   border: none;
   font-size: 3rem;
   margin: 2rem;
+  transition: .3s;
 
   &::before {
     content: '';
@@ -541,12 +549,16 @@ p {
     height: 4.5rem;
     z-index: -1;
   }
+
+  &:hover {
+    background-color: transparent;
+    color: var(--yellow);
+  }
 }
 
 footer {
   background-color: var(--black);
   display: flex;
-  flex-direction: column;
   justify-content: center;
   left: 0;
   width: 100%;
@@ -772,7 +784,11 @@ label {
 }
 
 input:checked + h2 + .reveal {
-  height: 17rem;
+  height: 28rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem;
 }
 
 .mobile-nav {
@@ -1044,6 +1060,10 @@ br {
     width: 100vw;
   }
 
+  .doknieuws {
+    width: 100vw;
+  }
+
 }
 
 @media (width <= 850px) {
@@ -1140,14 +1160,17 @@ br {
   }
 
   .newstext {
-    width: 100vw;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    width: 90vw;
   }
 
   .description {
     width: 90vw;
     padding: 1vw;
+  }
+
+  .doknieuws {
+    display: flex;
+    justify-content: center;
   }
 }
 
