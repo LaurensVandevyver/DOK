@@ -1,41 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-
-  <meta charset="UTF-8">
-  <title>Hello, doktest</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-
-  <script type="text/javascript">
-
-    WebFontConfig = {
-      custom: {
-        families: ['alberto'],
-        urls: ['assets/fonts/stylesheet.css']
-      }
-    };
-
-    (function() {
-      var wf = document.createElement('script');
-      wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-        '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-      wf.type = 'text/javascript';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(wf, s);
-    })();
-
-  </script>
-
-</head>
-
-<body>
-
 <header>
 
   <?php include 'nav.php';?>
 
   <div class="logo"></div>
   <div class="datum alberto">1 mei tot 25 sept</div>
+  <!--<picture>
+    <source type="image/webp" media="(max-width: 750px)" srcset="assets/img/tabletheader.webp"/>
+    <source media="(max-width: 750px)" srcset="assets/img/tabletheader.png"/>
+    <img src="assets/img/tabletheader.png"/>
+  </picture>-->
   <div class="headerimg"><h1 class="hidden">DOK</h1><p class="headerdatum alberto">1 mei tot 25 sept</p></div>
   <p class="description alberto">Vanaf 1 mei tot 25 september opent DOK weer iedere zondag zijn deuren! <br/> De kantine, speeltuin, park inclusief strand, de DOKbox en zo veel meer staan al weer op je te wachten! <br/> Tot dan! </p>
 </header>
@@ -179,7 +152,3 @@
 </main>
 
 <?php include 'footer.php';?>
-
-</body>
-
-</html>

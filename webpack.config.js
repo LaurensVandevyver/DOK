@@ -11,6 +11,7 @@ const configHtmls = require(`webpack-config-htmls`)();
 const extractCSS = new ExtractTextWebpackPlugin(`css/style.css`);
 
 // change for production build on different server path
+//const publicPath = `/laurens.vandevyver/20162017/ma3/dok/`;
 const publicPath = `/`;
 
 const port = 3000;

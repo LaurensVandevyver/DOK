@@ -22,6 +22,10 @@ $routes = array(
   'oeps' => array(
     'controller' => 'Events',
     'action' => 'oeps'
+  ),
+  'succes' => array(
+    'controller' => 'Events',
+    'action' => 'succes'
   )
 );
 
@@ -29,7 +33,7 @@ if(empty($_GET['page'])) {
   $_GET['page'] = 'home';
 }
 if(empty($routes[$_GET['page']])) {
-  header('Location: index.php');
+  header('Location: index.php?page=oeps');
   exit();
 }
 

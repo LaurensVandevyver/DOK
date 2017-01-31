@@ -4,8 +4,8 @@
   "scripts": {
     "development": "mamp ./src & webpack-dev-server",
     "serve": "ws -d ./dist -c -p 3000 ",
-        "clean": "rimraf ./dist",
-        "production": "npm run clean && NODE_ENV=production webpack -p"
+    "clean": "rimraf ./dist",
+    "production": "npm run clean && NODE_ENV=production webpack -p"
   },
   "devDependencies": {
     "babel-core": "^6.17.0",
@@ -22,6 +22,7 @@
     "file-loader": "^0.9.0",
     "html-loader": "^0.4.4",
     "image-webpack-loader": "^3.0.0",
+    "imagemin-cli": "^3.0.0",
     "local-web-server": "^1.2.6",
     "lodash": "^4.16.4",
     "mamp": "^0.0.4",

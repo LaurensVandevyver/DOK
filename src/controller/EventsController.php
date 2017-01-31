@@ -31,13 +31,12 @@ class EventsController extends Controller {
     if( $this->eventDAO->insert( $data ) ){
 
 	      $_SESSION['info'] = "Uw email adres werd correct opgeslaan";
-	      $this->redirect('index.php');
+	      $this->redirect('index.php?page=succes');
 
       }else {
 
 	$_SESSION['error'] = $this->EventDAO->validateRegistrationData($data);
-	$this->redirect('index.php?page=detail'); // DIT NOG AANPASSEN !!!!!!!!!!!!!!!!!!!!!!!!!!!
-
+	$this->redirect('index.php?page=oeps'); //
 }
 	}
 
@@ -59,6 +58,10 @@ class EventsController extends Controller {
   }
 
   public function oeps() {
+
+  }
+
+  public function succes() {
 
   }
 

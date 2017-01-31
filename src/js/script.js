@@ -1,16 +1,36 @@
 {
   const $form = document.querySelector(`.emailinput`);
+  const $hamburger = document.querySelector(`.hamburger`);
+  const $menu = document.querySelector(`.menu`);
+  const $closebutton = document.querySelector(`.closebutton`);
+  const $dok = document.querySelector(`.dok`);
 
   const init = () => {
-    $form.noValidate = true;
-    $form.addEventListener(`submit`, onFormSubmit);
-    document.getElementsByName(`email`)[0].addEventListener(`input`, onEmailChange);
-    document.getElementsByName(`email`)[0].addEventListener(`blur`, onEmailChange);
-    console.log($form);
+    if ($form) {
+      $form.noValidate = true;
+      $form.addEventListener(`submit`, onFormSubmit);
+      document.getElementsByName(`email`)[0].addEventListener(`input`, onEmailChange);
+      document.getElementsByName(`email`)[0].addEventListener(`blur`, onEmailChange);
+    }
 
-    document.querySelector(`.mobile-nav`).addEventListener(`click`, onClick);
-    document.querySelector(`.dockclick`).addEventListener(`click`, mobileClick);
+    $dok.addEventListener(`click`, slideOpen);
+    $hamburger.addEventListener(`click`, onClick);
+    $closebutton.addEventListener(`click`, onClose);
+  };
 
+  const slideOpen = () => {
+    document.querySelector(`.dok-items`).classList.remove(`hidden`);
+  };
+
+  const onClick = () => {
+    console.log(`onclick`);
+    $menu.style.height = `100vh`;
+  };
+
+  const onClose = () => {
+    console.log(`close menu`);
+    $menu.style.height = `0vh`;
+    $hamburger.innerHTML = `&#9776;`;
   };
 
   const onFormSubmit = event => {
@@ -41,15 +61,6 @@
         $veld.parentNode.querySelector(`.error`).innerHTML = ``;
       }
     }
-  };
-
-  const onClick = () => {
-    document.querySelector(`.menu`).style.height = `100vh`;
-    document.querySelector(`.mobile-nav`).innerHTML = `&#735`;
-  };
-
-  const mobileClick = () => {
-    document.querySelector(`.dok-items`).toggle(`.hidden`);
   };
 
   const valueMissing = $veld => {
