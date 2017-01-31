@@ -2,6 +2,7 @@
 <div class="mobile-nav">
   <button class="hamburger">&#9776;</button>
 </div>
+
 <div class="menu">
 <button class="closebutton">&#735;</button>
 <div class="whitelogo space"></div>

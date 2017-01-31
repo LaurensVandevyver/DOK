@@ -780,7 +780,7 @@ input:checked + h2 + .reveal {
   position: fixed;
   left: 5rem;
   top: 5rem;
-  background: #1d1f20;
+  background-color: red;
   height: 6rem;
   line-height: 6rem;
   z-index: 999999999999999999;
@@ -995,10 +995,6 @@ br {
   color: white;
   border: none;
   background-color: transparent;
-}
-
-.dok {
-  border: 1px solid red;
 }
 
 @media (width <= 960px) {
