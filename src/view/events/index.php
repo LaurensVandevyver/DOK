@@ -100,32 +100,32 @@
       <div class="red block kantine">
         <h2 class="block-title alberto">Kantine</h2>
         <p class="block-description alberto">De kantine is het hart van DOK. Je kan er naar concerten, films, performances, try-outs, exposities, lezingen, dj’s en nog veel meer komen kijken. </p>
-        <a class="block-link alberto" href="#"><div class="redlink">Meer info</div></a>
+        <a class="block-link alberto" href="http://dokgent.be/zones/kantine/"><div class="redlink">Meer info</div></a>
       </div>
       <div class="blue block box test">
         <h2 class="block-title alberto">Box</h2>
         <p class="block-description alberto">DOKbox (onder DOKmarkt) is een intieme black box met tribune, podium en bankjes geschikt voor allerlei activiteiten zoals theatershows en akoestische performances. </p>
-        <a class="block-link alberto" href="#"><div class="bluelink">Meer info</div></a>
+        <a class="block-link alberto" href="http://dokgent.be/zones/box/"><div class="bluelink">Meer info</div></a>
       </div>
       <div class="yellow block markt">
         <h2 class="block-title alberto">Markt</h2>
         <p class="block-description alberto">DOKmarkt is de overdekte zone en uitloper van de loods. Een zone voor sport en spel, met doelen voor minivoetbal, een basketbalring. Maar ook de plek van de DOK(rommel)markt.</p>
-        <a class="block-link alberto" href="#"><div class="yellowlink">Meer info</div></a>
+        <a class="block-link alberto" href="http://dokgent.be/zones/vitrine/"><div class="yellowlink">Meer info</div></a>
       </div>
       <div class="red block strand">
         <h2 class="block-title alberto">Strand en terras</h2>
         <p class="block-description alberto">Naast ons park kan je ons strand en terras vinden, kom zonnebaden midden in Gent aan het koele water of geniet van een drankje op ons terras!</p>
-        <a class="block-link alberto" href="#"><div class="redlink">Meer info</div></a>
+        <a class="block-link alberto" href="http://dokgent.be/zones/strand/"><div class="redlink">Meer info</div></a>
       </div>
       <div class="blue block arena">
         <h2 class="block-title alberto">Arena</h2>
         <p class="block-description alberto">Amfitheater naar Grieks model opgebouwd uit aarde en gras. Om naar mooie en intieme voorstellingen te kijken onder een stralende zon of een blinkende sterrenhemel.</p>
-        <a class="block-link alberto" href="#"><div class="bluelink">Meer info</div></a>
+        <a class="block-link alberto" href="http://dokgent.be/zones/arena/"><div class="bluelink">Meer info</div></a>
       </div>
       <div class="yellow block park">
         <h2 class="block-title alberto">Park</h2>
         <p class="block-description alberto">DOKpark verbindt het strand, de moestuin en de arena met elkaar. Zoals ieder jaar zal DOKpark er ook dit seizoen er weer anders uitzien. Het strand en de groene zone worden wat groter. </p>
-        <a class="block-link alberto" href="#"><div class="yellowlink">Meer info</div></a>
+        <a class="block-link alberto" href="http://dokgent.be/zones/strand/"><div class="yellowlink">Meer info</div></a>
       </div>
 
     </section>
