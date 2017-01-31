@@ -17,22 +17,22 @@
 
     <li class="mobile-navlistitem alberto"><div class="dok">DOK</div>
       <ul class="dok-items">
-        <li class="alberto dok-item"><az href="#">Gebruiken</a></li>
-        <li class="alberto dok-item"><a href="#">Bewoners</a></li>
-        <li class="alberto dok-item"><a href="#">Keuken</a></li>
-        <li class="alberto dok-item"><a href="#">Sport</a></li>
-        <li class="alberto dok-item"><a href="#">Tank</a></li>
+        <li class="alberto dok-item"><a href="http://dokgent.be/gebruiken/">Wat</a></li>
+        <li class="alberto dok-item"><a href="http://dokgent.be/bewoners/">Bewoners</a></li>
+        <li class="alberto dok-item"><a href="http://dokgent.be/19219-2/">Keuken</a></li>
+        <li class="alberto dok-item"><a href="http://dokgent.be/sport/">Sport</a></li>
+        <li class="alberto dok-item"><a href="http://dokgent.be/doktank/">Tank</a></li>
       </ul>
     </li>
 
     <li class="mobile-navlistitem alberto">Zones
       <ul class="dok-items hidden">
-        <li class="alberto dok-item"><a href="#">Kantine</a></li>
-        <li class="alberto dok-item"><a href="#">Box</a></li>
-        <li class="alberto dok-item"><a href="#">Markt</a></li>
-        <li class="alberto dok-item"><a href="#">Strand en terras</a></li>
-        <li class="alberto dok-item"><a href="#">Arena</a></li>
-        <li class="alberto dok-item"><a href="#">Park</a></li>
+        <li class="alberto dok-item"><a href="http://dokgent.be/zones/kantine/">Kantine</a></li>
+        <li class="alberto dok-item"><a href="http://dokgent.be/zones/box/">Box</a></li>
+        <li class="alberto dok-item"><a href="http://dokgent.be/zones/vitrine/">Markt</a></li>
+        <li class="alberto dok-item"><a href="http://dokgent.be/zones/strand/">Strand en terras</a></li>
+        <li class="alberto dok-item"><a href="http://dokgent.be/zones/arena/">Arena</a></li>
+        <li class="alberto dok-item"><a href="http://dokgent.be/zones/strand/">Park</a></li>
       </ul>
     </li>
 
@@ -47,21 +47,21 @@
     <li class="navlistitem alberto"><a href="#">Info</a></li>
     <li class="navlistitem alberto dokhover"><a href="#">DOK</a>
       <ul class="dok-items">
-        <li class="alberto dok-item">Gebruiken</li>
-        <li class="alberto dok-item">Bewoners</li>
-        <li class="alberto dok-item">Keuken</li>
-        <li class="alberto dok-item">Sport</li>
-        <li class="alberto dok-item">Tank</li>
+        <li class="alberto dok-item"><a href="http://dokgent.be/gebruiken/">Wat</a></li>
+        <li class="alberto dok-item"><a href="http://dokgent.be/bewoners/">Bewoners</a></li>
+        <li class="alberto dok-item"><a href="http://dokgent.be/19219-2/">Keuken</a></li>
+        <li class="alberto dok-item"><a href="http://dokgent.be/sport/">Sport</a></li>
+        <li class="alberto dok-item"><a href="http://dokgent.be/doktank/">Tank</a></li>
       </ul>
     </li>
     <li class="navlistitem alberto dokhover"><a href="#">Zones</a>
       <ul class="dok-items">
-        <li class="alberto dok-item"><a href="#">Kantine</a></li>
-        <li class="alberto dok-item"><a href="#">Box</a></li>
-        <li class="alberto dok-item"><a href="#">Markt</a></li>
-        <li class="alberto dok-item"><a href="#">Strand en terras</a></li>
-        <li class="alberto dok-item"><a href="#">Arena</a></li>
-        <li class="alberto dok-item"><a href="#">Park</a></li>
+        <li class="alberto dok-item"><a href="http://dokgent.be/zones/kantine/">Kantine</a></li>
+        <li class="alberto dok-item"><a href="http://dokgent.be/zones/box/">Box</a></li>
+        <li class="alberto dok-item"><a href="http://dokgent.be/zones/vitrine/">Markt</a></li>
+        <li class="alberto dok-item"><a href="http://dokgent.be/zones/strand/">Strand en terras</a></li>
+        <li class="alberto dok-item"><a href="http://dokgent.be/zones/arena/">Arena</a></li>
+        <li class="alberto dok-item"><a href="http://dokgent.be/zones/strand/">Park</a></li>
       </ul>
     </li>
     <li class="navslistitem search">
